@@ -1,0 +1,95 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; 
+}
+
+header.title {
+    background-color: #007bff; 
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+}
+
+.titleName {
+    margin: 0;
+}
+
+.timer {
+    background-color: #ffc107;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 5px; 
+    color: black;
+}
+
+.game-container {
+    width: 80%;
+    max-width: 900px; 
+    margin: 10px auto;
+    text-align: center;
+    background-color: rgb(224, 219, 219); 
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    border-radius: 10px; 
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-bottom: 20px;
+    place-items: center;
+}
+
+.grid img {
+    width: 80%;
+    height: 100%;
+    cursor: pointer;
+    border: 3px solid transparent;
+    border-radius: 10px; 
+    object-fit: contain;
+}
+
+.grid img.selected {
+    border-color: #007bff; 
+}
+
+button {
+    background-color: #28a745; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; 
+}
+
+.score {
+    color: #333;
+}
+
+#successModal .modal-header {
+    background-color: #28a745; /* Success color */
+    color: white;
+    border-bottom: none;
+}
+
+#successModal .modal-title {
+    font-weight: bold;
+}
+
+#successModal .modal-body {
+    text-align: center; /* Center align the text and image */
+}
+
+#successModal .modal-footer {
+    border-top: none;
+    justify-content: center; /* Center the button */
+}
