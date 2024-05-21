@@ -151,5 +151,3 @@ document.addEventListener("DOMContentLoaded", function () {
   const verifyButton = document.querySelector(".verify");
   verifyButton.addEventListener("click", verifySelection);
 });
-
-//測試git用
